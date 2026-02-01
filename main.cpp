@@ -20,7 +20,7 @@ int main() {
                 std::cout<<"You're a major\n";
             }
         }
-        catch (std::invalid_argument& e) {
+        catch (std::invalid_argument&) {
             std::cout<<"Invalid input\n";
         }
     }
