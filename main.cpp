@@ -13,7 +13,7 @@ int main() {
             if (age<0) {
                 std::cout<<"Negative values are not allowed\n";
             }
-            if (age<18) {
+            else if (age<18) {
                 std::cout<<"You're a minor\n";
             }
             else {
