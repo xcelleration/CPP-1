@@ -23,8 +23,10 @@ int main() {
             }
             else {
                 int name;
-                std::cout<<"Enter first and last name: \n";
+                std::cout<<"Enter first name: \n";
                 std::cin>>name;
+                std::cout<<"Enter last name: \n";
+                    std::cin>>name;
             }
         }
         catch (std::invalid_argument&) {
