@@ -13,20 +13,23 @@ int main() {
             int age = std::stoi(input, &pos);
             // If pos isn't the end of the string, there's trailing "garbage"
             if (pos != input.length()) {
-                std::cout << "Invalid input (contains non-numeric characters)\n";
+                std::cout << "Invalid input\n";
             }
             else if (age<0) {
                 std::cout<<"Negative values are not allowed\n";
             }
             else if (age<18) {
-                std::cout<<"You're a minor\n";
+                std::cout<<"You must be over 18 to continue\n";
             }
             else {
-                std::cout<<"You're a major\n";
+                int name;
+                std::cout<<"Enter first and last name: \n";
+                std::cin>>name;
             }
         }
         catch (std::invalid_argument&) {
             std::cout<<"Invalid input\n";
         }
+        std::cout<<"This will loop until I fix it\n";
     }
 }
