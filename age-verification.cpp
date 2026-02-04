@@ -22,16 +22,19 @@ int main() {
                 std::cout<<"You must be over 18 to continue\n";
             }
             else {
-                int name;
-                std::cout<<"Enter first name: \n";
-                std::cin>>name;
-                std::cout<<"Enter last name: \n";
-                    std::cin>>name;
+                std::string firstName, lastName; // Use string, not int
+                std::cout << "Enter first name: ";
+                std::cin >> firstName;
+                std::cout << "Enter last name: ";
+                std::cin >> lastName;
+
+                std::cout << "Hello, " << firstName << " " << lastName << "!\n";
             }
         }
         catch (std::invalid_argument&) {
             std::cout<<"Invalid input\n";
         }
-        std::cout<<"This will loop until I fix it\n";
+        std::cout<<"More questions coming soon..\n";
+            break;
     }
 }
